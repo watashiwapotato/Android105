@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Dialog</string>
+  <string name="btn_start">開始執行</string>
+  <string name="str_star_processing">執行中...</string>
+  <string name="str_done">執行結果</string>
+  <string name="str_finish">執行完畢</string>
+</resources>
