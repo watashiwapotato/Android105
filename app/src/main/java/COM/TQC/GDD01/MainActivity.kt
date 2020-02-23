@@ -1,5 +1,6 @@
 package COM.TQC.GDD01
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -35,8 +36,7 @@ class MainActivity : AppCompatActivity() {
         init()
     }
 
-    private fun init()
-    {
+    private fun init() {
         // 初始化tv與btn
         tv = findViewById(R.id.main_textView1)
         btn = findViewById(R.id.main_button1)
@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             tv!!.text = resources.getString(R.string.str_star_processing)
             // TO DO
 
+            MyProgressDialog().show(supportFragmentManager,"")
         }
     }
 
