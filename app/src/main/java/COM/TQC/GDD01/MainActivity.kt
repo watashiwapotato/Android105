@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main)
-
+progressDialog = MyProgressDialog(this.handler)
         init()
     }
 
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             tv!!.text = resources.getString(R.string.str_star_processing)
             // TO DO
 
-            MyProgressDialog().show(supportFragmentManager,"")
+            progressDialog!!.show(supportFragmentManager,"dialog")
         }
     }
 
